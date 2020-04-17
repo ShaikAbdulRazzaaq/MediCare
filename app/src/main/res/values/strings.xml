@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MediCare</string>
+    <string name="sign_in"><u>Sign In</u></string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="signup">SignUp</string>
+    <string name="login">Login</string>
+    <string name="not_registered">Not Registered?</string>
+    <string name="sign_up_button">SIGN UP</string>
+    <string name="sign_in_title">Sign IN</string>
+    <string name="email_or_phone_number">Email or Phone Number</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="check">Check</string>
+    <string name="symptom_10">Symptom 10</string>
+    <string name="symptom_9">Symptom 9</string>
+    <string name="symptom_8">Symptom 8</string>
+    <string name="symptom_6">Symptom 6</string>
+    <string name="symptom_5">Symptom 5</string>
+    <string name="symptom_7">Symptom 7</string>
+    <string name="symptom_4">Symptom 4</string>
+    <string name="symptom_3">Symptom 3</string>
+    <string name="symptom_2">Symptom 2</string>
+    <string name="symptom_1">Symptom 1</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="are_you_physically_active">Are You Physically Active:</string>
+    <string name="alcohol">Alcohol:</string>
+    <string name="smoke">Smoke:</string>
+    <string name="cholestrol_level">Cholestrol Level</string>
+    <string name="disystolic_blood_pressure">Disystolic Blood Pressure</string>
+    <string name="systolic_blood_pressure">Systolic Blood Pressure</string>
+    <string name="weight_in_kgs">Weight in kgs</string>
+    <string name="height_in_cms">Height in cms</string>
+    <string name="others">others</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="age">Age</string>
+    <string name="cardiovascular_disease">CardioVascular Disease</string>
+    <string name="or">OR</string>
+    <string name="url">https://www.youtube.com/playlist?list=PLivjPDlt6ApQhuYe9r7EVeWMGXJWAZsNw</string>
+    <string name="follow_this_url_and_make_your_brain_go_crazy">Follow this Url and Make Your Brain Go Crazy!</string>
+    <string name="symptoms">Symptoms</string>
+</resources>

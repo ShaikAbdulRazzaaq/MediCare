@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F7F9"
+        tools:context=".Login.MainActivity">
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:id="@+id/authenticationImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/login_icon"
+            app:layout_constraintBottom_toTopOf="@+id/card"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardUseCompatPadding="true"
+            app:contentPaddingBottom="10dp"
+            app:contentPaddingTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/authenticationImage">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/logintext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/overpass_semibold"
+                    android:text="@string/sign_in_title"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/usernamelayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/logintext"
+                    android:layout_marginTop="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/overpass_semibold"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passwordlayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usernamelayout"
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/overpass_semibold"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/loginwithEmail"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/passwordlayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="@string/sign_in_title"
+                    app:cornerRadius="12dp" />
+                <TextView
+                    android:id="@+id/already"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/loginwithEmail"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/overpass_semibold"
+                    android:text="@string/not_registered" />
+
+                <TextView
+                    android:id="@+id/signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/already"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/overpass_semibold"
+                    android:text="@string/sign_up"
+                    android:textColor="#000" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/signUp"
+        android:id="@+id/separator"
+        android:background="@color/colorPrimaryDark"
+        />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/separator"
+                    android:id="@+id/or"
+                    android:layout_margin="10dp"
+                    android:text="Admin SignIn"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textSize="25sp"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/PhoneNumberlayoutlayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/or"
+                   >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/phoneNumberSignin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/overpass_semibold"
+                        android:hint="@string/phone_number"
+                        android:inputType="phone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/login"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PhoneNumberlayoutlayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="Sign in As Admin"
+                    app:cornerRadius="10dp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

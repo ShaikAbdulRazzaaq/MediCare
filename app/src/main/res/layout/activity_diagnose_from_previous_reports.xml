@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F9"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Patient.DiagnoseFromPreviousReports">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:cardCornerRadius="10dp"
+    android:background="#999"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="10dp"
+    android:padding="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:text="Diabetes"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/diabetesButton"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="#000"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:id="@+id/cardioVascularDiseaseButton"
+         android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:text="Cardio Vascular DIsease"
+            android:fontFamily="@font/nunito_sans"
+
+            android:textColor="#000"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:id="@+id/LiverDiseaseButton"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:text="Liver Disease"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="#000"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

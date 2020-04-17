@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F7F9"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DiabetesTitle"
+                android:text="Diabetes"
+                android:padding="20dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/titillium_web_semibold"
+                android:textSize="30sp"
+                android:textColor="#000"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:padding="20dp"
+                android:layout_below="@id/DiabetesTitle"
+                app:cardUseCompatPadding="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/AgeLayoutDiabetes"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ageDiabetes"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:maxLength="3"
+                            android:hint="@string/age"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/pregnanciesLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/AgeLayoutDiabetes"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/pregancies"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:maxLength="3"
+                            android:hint="Pregnancies"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bMILayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pregnanciesLayout"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/BMI"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:hint="BMI"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/glucoseLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bMILayout"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/glucose"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:hint="Glucose"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/BPLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/glucoseLayout"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/BP"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:hint="Blood Pressure"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/skinThicknessLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/BPLayout"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/skinThickness"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:hint="Skin Thickness"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/InsulinLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/skinThicknessLayout"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Insulin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:hint="Insulin"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/diabetesPedigreeFunctionLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/InsulinLayout"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/diabetesPedigreeFunction"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:hint="Diabetes Pedigree Function"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check"
+                        android:id="@+id/DiabetesCheck"
+                        android:layout_below="@id/diabetesPedigreeFunctionLayout"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:id="@+id/ResultOfSymptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DiabetesCheck"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="50dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="You May Have Diabetes"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+

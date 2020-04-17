@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F6F7F9"
+    tools:context=".Doctor.DoctorPage">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+       android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/doctorImage"
+        android:src="@drawable/ic_undraw_medicine_b1ol"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+      android:layout_margin="10dp"
+            android:id="@+id/resolveQueries"
+            android:fontFamily="@font/titillium_web_semibold"
+            android:text="Resolve Queries"
+            />
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+          android:layout_margin="10dp"
+            android:id="@+id/ViewEditProfile"
+            android:fontFamily="@font/titillium_web_semibold"
+            android:text="View or Edit Profile"
+            android:layout_marginBottom="10dp"
+           />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

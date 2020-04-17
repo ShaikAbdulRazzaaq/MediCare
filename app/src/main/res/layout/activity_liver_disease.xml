@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F6F7F9"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/LiverDisease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/titillium_web_semibold"
+                android:padding="20dp"
+                android:text="Liver Disease"
+                android:textColor="#000"
+                android:textSize="30sp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LiverDisease"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/AgeLayoutLiver"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ageLiver"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:maxLength="3"
+                            android:hint="@string/age"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.button.MaterialButtonToggleGroup
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/genderLiver"
+                        android:layout_below="@+id/AgeLayoutLiver"
+                        app:singleSelection="true"
+                        android:weightSum="3"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:text="@string/male"
+                            android:textColor="#000"
+                            android:fontFamily="@font/titillium_web_semibold"
+                            android:id="@+id/LiverGenderMale"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_height="wrap_content"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:text="@string/female"
+                            android:textColor="#000"
+                            android:fontFamily="@font/titillium_web_semibold"
+                            android:id="@+id/LiverGenderFeMale"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_height="wrap_content"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:text="@string/others"
+                            android:textColor="#000"
+                            android:fontFamily="@font/titillium_web_semibold"
+                            android:id="@+id/LiverGenderOthers"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.button.MaterialButtonToggleGroup>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Totalbilirubinlayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/genderLiver"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/TotalBilirubin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/nunito_sans"
+                        android:textColor="#000"
+                        android:maxLength="3"
+                        android:hint="Total bilirubin"
+                        android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Directbilirubinlayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Totalbilirubinlayout"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Directbilirubin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:maxLength="3"
+                            android:hint="Direct bilirubin"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/AlkalinephosphateLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Directbilirubinlayout"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Alkalinephosphate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:maxLength="3"
+                            android:hint="Alkaline phosphate"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/AlamineaminotransferaseLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/AlkalinephosphateLayout"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Alamineaminotransferase"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:maxLength="3"
+                            android:hint="Alamine Aminotransferase"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/AspartateaminotransferaseLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/AlamineaminotransferaseLayout"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Aspartateaminotransferase"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:maxLength="3"
+                            android:hint="Aspartate aminotransferase"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TotalproteinsLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/AspartateaminotransferaseLayout"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Totalproteins"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:maxLength="3"
+                            android:hint="Total proteins"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/AlbuminLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/TotalproteinsLayout"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Albumin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:maxLength="3"
+                            android:hint="Albumin"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/AlbuminandglobulinratioLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/AlbuminLayout"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Albuminandglobulinratio"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_sans"
+                            android:textColor="#000"
+                            android:maxLength="3"
+                            android:hint="Albumin and globulin ratio"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check"
+                        android:id="@+id/LiverCheck"
+                        android:layout_below="@id/AlbuminandglobulinratioLayout"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:id="@+id/ResultOfSymptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LiverCheck"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="50dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="You May Have Liver Disease"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+
+

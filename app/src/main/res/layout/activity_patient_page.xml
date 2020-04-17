@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F9"
+    android:padding="20dp"
+    android:columnCount="2"
+    android:layout_columnWeight="2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:layout_margin="10dp"
+            android:id="@+id/profilePatient"
+            android:fontFamily="@font/titillium_web_semibold"
+            android:text="Profile"
+             />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:id="@+id/diseaseDetectionSymptoms"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/titillium_web_semibold"
+            android:text="Disease Detection From Symptoms"
+           />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:id="@+id/DiagnosePatient"
+ android:layout_margin="10dp"
+            android:fontFamily="@font/titillium_web_semibold"
+            android:text="Diagnose Disease From Previous Reports"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/AskQueryToDoctor"
+          android:layout_margin="10dp"
+            android:fontFamily="@font/titillium_web_semibold"
+            android:text="Ask Query From Doctor"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mindGames"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/titillium_web_semibold"
+            android:text="Mind Games"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chatBot"
+ android:layout_margin="10dp"
+            android:fontFamily="@font/titillium_web_semibold"
+            android:text="Chat Bot"
+             />
+    </androidx.cardview.widget.CardView>
+</GridLayout>
+
+

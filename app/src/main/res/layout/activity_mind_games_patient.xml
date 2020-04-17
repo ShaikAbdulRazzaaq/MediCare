@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F9"
+    tools:context=".Patient.MindGamesPatient">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true"
+        android:padding="15dp"
+        app:contentPadding="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/brainImage"
+                android:src="@drawable/ic_brain_neuroscience_brainstorming_mind_medical_neurology_20120"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brainImage"
+                android:text="Mind Games"
+android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/mindGamesTitle"
+                android:fontFamily="@font/nunito_sans_semibold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mindGamesTitle"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/nunito_sans"
+                android:textColor="#000"
+                android:layout_margin="8dp"
+                android:id="@+id/channelUrl"
+                android:text="@string/url"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/channelUrl"
+                android:text="@string/follow_this_url_and_make_your_brain_go_crazy"
+                android:fontFamily="@font/nunito_sans"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

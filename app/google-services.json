@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1032361392354",
+    "firebase_url": "https://medicare-d8842.firebaseio.com",
+    "project_id": "medicare-d8842",
+    "storage_bucket": "medicare-d8842.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032361392354:android:bfaa7c78769512e16246bb",
+        "android_client_info": {
+          "package_name": "Hackathon.Projects.MediCare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032361392354-uuhjn6bicjelhs05bv8u1dlgekrve2nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk3tH_CYr4hWcEpJu7huJgVyIWfSdF8t0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032361392354-uuhjn6bicjelhs05bv8u1dlgekrve2nj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

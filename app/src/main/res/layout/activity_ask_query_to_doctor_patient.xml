@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F6F7F9"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="15dp"
+        android:id="@+id/askedQuestionCard"
+        app:cardUseCompatPadding="true"
+        android:padding="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ask Doctor"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/askDoctor"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:layout_centerHorizontal="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/AskedQuestionLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/askDoctor"
+                app:counterMaxLength="200"
+                app:counterEnabled="true"
+                android:layout_margin="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneNumberSignup"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:layout_height="match_parent"
+                    android:maxLength="200"
+                    android:fontFamily="@font/overpass_semibold"
+                    android:hint="Enter Your Question "
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit"
+                android:id="@+id/submitQuestionAsked"
+                android:layout_below="@id/AskedQuestionLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/askedQuestionCard"
+        android:id="@+id/recentAskedQuestionCard"
+        app:cardUseCompatPadding="true"
+        android:padding="10dp"
+        >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recentlyAskedQuestion"
+                    android:text="Recently Asked Questions"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question1"
+                    android:layout_below="@id/recentlyAskedQuestion"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/answer1"
+                    android:layout_below="@id/question1"/>
+            </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
